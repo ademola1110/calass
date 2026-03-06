@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body
+    style="max-width: 500px; max-width: 500px; margin-auto; justify-items: center;"
+  >
+    <div style="border: solid black 1px; width: 250px">
+      <div style="margin-bottom: 20px">
+        <input
+          type="text"
+          id="output2"
+          style="padding: 20px 33px; border: none"
+        />
+      </div>
+      <div>
+        <button
+          style="
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: red;
+            background-color: white;
+            border: none;
+          "
+          onclick="clearInput('')"
+        >
+          CE
+        </button>
+        <button
+          style="
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: green;
+            background-color: white;
+            border: none;
+          "
+          onclick="addInput(%)"
+        >
+          %
+        </button>
+        <button
+          style="
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: green;
+            background-color: white;
+            border: none;
+          "
+          onclick="addInput(**)"
+        >
+          **
+        </button>
+        <button
+          style="
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: green;
+            background-color: white;
+            border: none;
+          "
+          onclick="addInput('/')"
+        >
+          /
+        </button>
+      </div>
+      <div>
+        <button
+          style="
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: white;
+            border: none;
+          "
+          onclick="addInput(7)"
+        >
+          7
+        </button>
+        <button
+          style="
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: white;
+            border: none;
+            margin-left: 10px;
+          "
+          onclick="addInput(8)"
+        >
+          8
+        </button>
+        <button
+          style="
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: white;
+            border: none;
+            margin-left: 7px;
+          "
+          onclick="addInput(9)"
+        >
+          9
+        </button>
+        <button
+          style="
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: green;
+            background-color: white;
+            border: none;
+            margin-left: 7px;
+          "
+          onclick="addInput('*')"
+        >
+          *
+        </button>
+      </div>
+      <div>
+        <button
+          style="
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: white;
+            border: none;
+          "
+          onclick="addInput(4)"
+        >
+          4
+        </button>
+        <button
+          style="
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: white;
+            border: none;
+            margin-left: 10px;
+          "
+          onclick="addInput(5)"
+        >
+          5
+        </button>
+        <button
+          style="
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: white;
+            border: none;
+            margin-left: 7px;
+          "
+          onclick="addInput(6)"
+        >
+          6
+        </button>
+        <button
+          style="padding: font-size: 20px; font-weight: bold; color: green; 20px; background-color: white; border: none; margin-left: 20px;"
+          onclick="addInput('-')"
+        >
+          -
+        </button>
+      </div>
+      <div>
+        <button
+          style="
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: white;
+            border: none;
+          "
+          onclick="addInput(1)"
+        >
+          1
+        </button>
+        <button
+          style="
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: white;
+            border: none;
+            margin-left: 10px;
+          "
+          onclick="addInput(2)"
+        >
+          2
+        </button>
+        <button
+          style="
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: white;
+            border: none;
+            margin-left: 7px;
+          "
+          onclick="addInput(3)"
+        >
+          3
+        </button>
+        <button
+          style="
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: green;
+            background-color: white;
+            border: none;
+            margin-left: 4px;
+          "
+          onclick="addInput('+')"
+        >
+          +
+        </button>
+      </div>
+      <div>
+        <button
+          style="
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: white;
+            border: none;
+          "
+          onclick="addInput(00)"
+        >
+          00
+        </button>
+        <button
+          style="
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: white;
+            border: none;
+            margin-left: 2px;
+          "
+          onclick="addInput(0)"
+        >
+          0
+        </button>
+        <button
+          style="
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: white;
+            border: none;
+            margin-left: 7px;
+          "
+          onclick="addInput('.')"
+        >
+          .
+        </button>
+        <button
+          style="
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: blue;
+            background-color: white;
+            border: none;
+            margin-left: 5px;
+          "
+          onclick="calculate('')"
+        >
+          =
+        </button>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
